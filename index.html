@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        
+# 1
+<p>
+    > 执行结果，10
+</p>
+
+<p>
+    > 原因，i是全局变量，函数里面的i私有作用域没有，是需要到上级作用域中查找的，此时的i值循环结束为10
+</p>
+
+
+</div>
+<div>
+    # 2
+<p>> 执行结果，报错</p>
+<p>> 原因，let会形成一个块级作用域，不允许在未声明前使用</p>
+    
+    
+    
+</div>
+
+<div>
+    # 3
+<p>var arr = [12,34,32,89,4];</p>
+<p>var min = Math.min(...arr);</p>
+<p>console.log(min);</p>
+    ```
+    
+    
+    
+    ```
+</div>
+
+<div>
+    # 4
+<p>> const，常量，指向一个不变的地址</p>
+<p> > let，没有变量提升，不允许重复声明，只是全局变量，是块级作用域</p>
+<p>> var, 有变量提升，可以重复声明，是全局变量也是window属性，不会形成私有作用域</p>
+    
+    
+   
+    
+    
+</div>
+
+<div>
+    # 5
+<p>> 结果，20</p>
+<p>> 原因，箭头函数的this是当前上下文的this，指向obj对象</p>
+    
+    
+    
+</div>
+
+<div>
+    # 6
+<p>> Symbol 的值是唯一的，避免冲突</p>
+    
+</div>
+
+<div>
+    # 7
+<p>> 浅拷贝，拷贝的引用</p>
+<p>> 深拷贝，拷贝的值</p>
+    
+    
+    
+</div>
+
+<div>
+    # 8
+<p>> 异步编程是另外开辟线程工作，比如定时器、事件、ajax</p>
+<p> > EventLoop是等同步处理完成后从事件队列中提取事件到栈中执行的机制</p>
+<p> > 宏任务、微任务都是异步，只是宏任务先放进事件队列中后放进栈中执行</p>
+    
+    
+   
+    
+   
+</div>
+
+<div>
+    # 9
+<p>let p1=new Promise((resolve,reject)=>{
+    let a='hello';
+    resolve(a);
+});</p>
+<p>p1.then(result=>{
+    let b='lagou';
+    return result+b;
+}).then(result=>{
+    let c='iy';
+    console.log(result+c);
+});</p>
+    ```
+    
+    
+    ```
+</div>
+
+<div>
+    # 10
+<p>> TypeScript是对JavaScript的升级，可以编译成JavaScript</p>
+    
+</div>
+
+<div>
+    # 11
+<p>> 优点，对类型安全检查方面完善，对第三方库的兼容</p>
+<p>> 缺点，复杂需要一定的学习，开发成本加大</p>   
+    
+    
+</div>
+
+
+</body>
+</html>
