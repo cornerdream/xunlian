@@ -13,11 +13,11 @@
 
 # 3
 
-`
+```
 var arr = [12,34,32,89,4];
 var min = Math.min(...arr);
 console.log(min);
-`
+```
 
 # 4
 
@@ -53,7 +53,7 @@ console.log(min);
 
 # 9
 
-`
+```
 let p1=new Promise((resolve,reject)=>{
     let a='hello';
     resolve(a);
@@ -65,7 +65,7 @@ p1.then(result=>{
     let c='iy';
     console.log(result+c);
 });
-`
+```
 
 # 10
 
