@@ -1,0 +1,26 @@
+{
+  "name": "my-node-project",
+  "version": "1.0.0",
+  "description": "test cli",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cornerdream/generators-project.git"
+  },
+  "keywords": [
+    "generators"
+  ],
+  "author": "yxg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cornerdream/generators-project/issues"
+  },
+  "homepage": "https://github.com/cornerdream/generators-project#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "qs": "^6.9.4"
+  }
+}

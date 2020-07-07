@@ -1,0 +1,43 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add yeoman-generator
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\MyDrivers\DriverGenius;C:\Program Files\MyDrivers\DriverGenius\ksoft
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  win32 ia32
+
+Trace: 
+  Error: connect ETIMEDOUT 104.16.22.35:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16)
+
+npm manifest: 
+  {
+    "name": "generator-demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "generators/app/index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "yeoman-generator"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "yeoman-generator": "^4.10.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
