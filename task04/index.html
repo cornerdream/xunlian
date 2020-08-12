@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpack</title>
+</head>
+<body>
+    <div>
+        一：
+        <div>
+            webpack的构建流程：
+            <p>
+                1.entry入口
+            </p>
+            <p>
+                2.递归解析entry依赖的所有的module，根据module.rules的loader进行转换
+            </p>
+            <p>
+                3.解析当前module依赖的module，这些module以entry为单位进行分组，即为一个chunk
+            </p>
+            <p>
+                4.chunk转换成文件输出output
+            </p>
+            <p>
+                5.plugin特定时机注入扩展逻辑，用来优化
+            </p>
+        </div>
+        <div>
+            webpack的打包过程
+            <p>
+                1.安装webpack、webpack-cli
+            </p>
+            <p>
+                2.安装各种loader
+            </p>
+            <p>
+                3.配置webpack.config.js
+            </p>
+            <p>
+                4.安装webpack-dev-server
+            </p>
+
+        </div>
+    </div>
+    <div>
+        二：
+        <div>
+            loader和plugin的不同
+            <p>
+                loader用于对模块的源代码转换 ，是对打包前的模块预处理。
+            </p>
+            <p>
+                plugin目的解决loader无法实现的事情，是打包过程中基于事件机制的优化
+            </p>
+        </div>
+        <div>
+            <div>
+                如何开发loader
+                <p>
+                    1.确定单一的loader的功能
+                </p>
+                <p>
+                    2.链式调用
+                </p>
+                <p>
+                    3.遵循webpack的规则和结构，输入输出都是字符串，独立即用
+                </p>
+            </div>
+            <div>
+                如何开发plugin
+                <p>
+                    1.供实例设置options的构造函数
+                </p>
+                <p>
+                    2.构造函数的原型prototype定义apply方法
+                </p>
+                <p>
+                    3.apply方法注入compiler对象，挂载webpack事件钩子
+                </p>
+                <p>
+                    4.事件钩子回调函数中的compilation对象处理webpack内部实例的特定数据 
+                </p>
+                <p>
+                    5.事件钩子回调函数中的回调函数调用
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        webpack实现vue项目打包任务
+        <p>
+            1.npm install webpack webpack-cli webpack-dev-server --save-dev
+        </p>
+        <p>
+            2.npm install style-loader css-loader less-loader 
+            打包样式文件
+        </p>
+        <p>
+            3.npm install url-loader 
+            打包图片文件
+        </p>
+        <p>
+            4.npm install vue-loader 
+            打包.vue文件
+        </p>
+        <p>
+            5.npm install babel-loader @babel/core @babel/preset-env 
+            编译文件
+        </p>
+        <p>
+            6.npm install clean-webpack-plugin html-webpack-plugin copy-webpack-plugin 
+            插件处理自动清除，html文件，复制静态文件
+        </p>
+        <p>
+            7.webpack.common.js
+            配置webpack
+        </p>
+        <p>
+            8.npm run webpack
+            打包 
+        </p>
+        <p>
+            9.npm run webpack-dev-server 
+            打开项目
+        </p>
+    </div>
+</body>
+</html>
